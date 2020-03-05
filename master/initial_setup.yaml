@@ -1,0 +1,8 @@
+---
+  - name: Initial process
+    hosts: all
+    remote_user: root
+    tasks:
+        - name: Disabling swap on all nodes
+          shell: {{ items }}
+          
